@@ -1,14 +1,14 @@
 const express = require ('express');
-const app = express();
+const index = express();
 
-app.get('/', (req, res) => {
+index.get('/', (req, res) => {
 	res.send("Hola Mundo");
 });
 
 
 const port = process.env.port || 3000;
 
-app.listen(port, () => {
+index.listen(port, () => {
 	console.log("Hola Mundo");
 });
 
